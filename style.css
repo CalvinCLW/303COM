@@ -1,0 +1,1515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* Scroll bar*/
+::-webkit-scrollbar{
+    width: 15px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #111111;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #333333;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555555;
+}
+/* End of scrollbar*/
+/* Header */
+.header, header1 {
+    width: 100%;
+    background-size: cover;
+    z-index: 1;
+}
+
+.header .navbar, header1 .navbar {
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    text-align: right;
+    transition: .5s;
+    display: block; 
+    z-index: 1;
+}
+
+.header1 {
+    background-color: black;
+}
+
+.header1 .navbar {
+    display: block;
+}
+
+.header1 .navbar ul li:first-child {
+    padding: 0px 0 20px 0px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 50px;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+    font-weight: 500;
+    text-transform: uppercase;
+    float:left;
+}
+
+.navbar ul li > a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar ul li > a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: white ;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out 0s;
+}
+
+.navbar ul li:hover > a:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.navbar ul li:first-child{
+    padding: 40px 0 15px 15px;
+}
+
+.navbar ul li:first-child img{
+    width: 200px;
+}
+
+.header1 .navbar ul li:first-child img{
+    width: 150px;
+}
+.navbar ul li:first-child:hover{
+    background: transparent;
+    
+}
+
+.navbar ul li:not(:first-child) {
+    margin-top: 75px;
+}
+
+
+.navbar#nav {
+    padding: 0px;
+}
+
+.navbar ul li:nth-child(6), .header1 ul li:nth-child(2) {
+    float: right;
+    margin-right: 2%;
+}
+.header1 ul li:nth-child(2) {
+    float: right;
+    margin-top: 2%;
+}
+
+/* End of header */
+
+/* Footer */
+.footer {
+    background-color: black;
+    width: 100%;
+    background-size: cover;
+    padding: 20px 0 25px 0;
+    margin-top:auto;
+}
+
+.footer .col-3 {
+    color: white;
+}
+
+.footer .col-3 h4{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.footer .col-3:nth-child(4) {
+    font-size: 16px;
+}
+
+.footer .col-3 ul li {
+    list-style: none;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.footer .col-3:first-child ul li {
+    font-size: 14px;
+}
+.footer .col-3 ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer .col-3 ul li a:hover {
+    color: white;
+}
+
+.footer .col-3 ul li > a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out 0s;
+}
+
+.footer .col-3 ul li:hover a:before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.footer #topBtn {
+    background-color: #d5d5d5;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 4px 5px 3px #101010;
+    float: right;
+    margin: 120px 30px 0 0;
+}
+
+.footer .col-3:nth-child(4) table {
+    color: white;
+    font-size: 16px;
+}
+
+
+.footer .col-3:nth-child(4) table td > i {
+    padding: 0 20px;
+}
+
+.footer .col-3:nth-child(4) table td:nth-child(2) {
+    padding: 0 20px;
+}
+ 
+.footer .col-3:nth-child(4) table td {
+    padding-bottom: 10px;
+}
+
+.footer .copyright {
+    color: white;
+    font-size: 16px;
+}
+
+.footer > .container > .row {
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+/* End of Footer */
+
+/* Body */
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #141414 !important;
+/*    background: linear-gradient(to bottom right, grey, black);*/
+}
+/* End of Body*/
+
+/* Account/Forget Password */
+.col-6.register-img {
+    background-image:url(images/register.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-x: 50%;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box{
+    width: 380px;
+    height: 350px;
+    position: relative;
+    margin: 6% auto;
+    background: black;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    background-color: black;
+}
+
+.toggle-btn {
+    padding: 10px 28px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    color: white;
+    background: black;
+    border: 2px solid white;
+    transition: .5s;
+}
+
+.input-group-custom {
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    
+}
+
+.input-field-custom{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.input-field-custom::placeholder {
+    color: white;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto auto auto;
+    background: black;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    border: 2px solid white;
+}
+
+.submit-btn:hover {
+    color: black;
+    background: white;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+.check-box{
+    margin: 10px 10px 50px 0;
+    
+}
+
+span{
+    color: #777;
+    font-size: 12px;
+    position: absolute;
+    
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}
+
+#login > a {
+    color: white;
+    text-decoration: none;
+}
+
+#login > a:hover {
+    text-decoration: underline;
+}
+
+#loginShowPassword, #RegisterShowPassword {
+    position: absolute;
+    right: 0;
+    height: 45px;
+    top: 57px;
+    background: black;
+    border: 0px;
+    color: white;
+}
+
+#RegisterShowPassword {
+    top: unset;
+}
+
+#register input::-webkit-outer-spin-button,
+#register input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.forget-password {
+    width: 380px;
+    height: 240px;
+    position: relative;
+    margin: 10% auto;
+    background: black;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.forget-password .input-group-custom{
+    position: unset;
+    margin: auto;
+}
+
+.forget-password > p {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 15px;
+    font-weight: 600;
+}
+
+/* End of Account/Forget Password*/
+
+/* Homepage */
+
+.homepage .container-fluid.firstrow .row #slider {
+    position: relative;
+    width: 1920px;
+    height: 840px;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.homepage .container-fluid.firstrow .row #slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+}
+
+.homepage .container-fluid.firstrow .row #slider ul li {
+    position: relative;
+    height: 100%;
+    float: left;
+}
+
+.homepage .container-fluid.firstrow .row #slider ul li img{
+    width: 1920px;
+    height: 840px;
+}
+ 
+.homepage .container-fluid.firstrow .row #slider #prev, .homepage .container-fluid.firstrow .row #slider #next {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+}
+
+.homepage .container-fluid.firstrow .row #slider #prev:hover, .homepage .container-fluid.firstrow .row #slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+}
+
+.homepage .container-fluid.secondrow {
+    background-color: black;
+    padding: 50px;
+}
+
+.homepage .container-fluid.secondrow .row h1{
+    color: white;
+    font-weight: 700;
+}
+
+.homepage .container-fluid.secondrow .row ul.topSeller {
+    display: inline-flex;
+    padding: 50px 30px;
+}
+
+.homepage .container-fluid.secondrow .row ul li{
+    list-style: none;
+    padding: 0 30px;
+}
+
+
+.homepage .container-fluid.secondrow .row ul li img {
+    width: 160px;
+    height: 230px;
+    border: 1px solid #999;
+}
+
+.homepage .container-fluid.thirdrow {
+    background-color: black;
+    padding: 50px;
+}
+
+.homepage .container-fluid.thirdrow {
+    background-color: #141414;
+}
+
+.homepage .container-fluid.thirdrow .row h1{
+    color: white;
+    font-weight: 700;
+}
+
+
+.homepage .container-fluid.thirdrow .row ul.promotion, .homepage .container-fluid.thirdrow .row ul.news {
+    display: inline-flex;
+    padding: 0px 30px;
+}
+
+.homepage .container-fluid.thirdrow .row ul.promotion {
+    animation: slideRight 0.5s forwards;
+}
+
+.homepage .container-fluid.thirdrow .row ul.news {
+    animation: slideLeft 0.5s forwards;
+}
+
+@keyframes slideRight {
+    from {margin-left:-500px; opacity:0}
+    to {margin-left:0px; opacity:1}
+}
+
+@keyframes slideLeft {
+    from {margin-left:500px; opacity:0}
+    to {margin-left:0px; opacity:1}
+}
+
+.homepage .container-fluid.thirdrow .row ul.promotion li , .homepage .container-fluid.thirdrow .row ul.news li{
+    padding: 50px;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+}
+
+.homepage .container-fluid.thirdrow .row ul.promotion li img {
+    width: 70%;
+    border: 1px solid #999;
+}
+
+.homepage .container-fluid.thirdrow .row ul.news li img {
+    width: 90%;
+    height: 90%;
+    border: 1px solid #999;
+}
+
+.homepage .container-fluid.thirdrow .row ul.titles {
+    display: flex;
+}
+
+.homepage .container-fluid.thirdrow .row ul.titles li {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    transition: .5s;
+    list-style: none;
+}
+
+.homepage .container-fluid.thirdrow .row ul.titles li:hover {
+    transition: transform .5s;
+    
+}
+
+.homepage .container-fluid.thirdrow .row ul.titles li:nth-child(2), .homepage .container-fluid.thirdrow .row ul.titles li:nth-child(3) {
+    padding-left: 20px;
+}
+
+.homepage .container-fluid.thirdrow .row ul.titles li a {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.homepage .container-fluid.thirdrow .row ul.titles li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.homepage .container-fluid.thirdrow .row ul.titles li a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.homepage .container-fluid.thirdrow .row ul.titles li a:hover::after, .homepage .container-fluid.thirdrow .row ul.titles li a:focus::after, .homepage .container-fluid.thirdrow .row ul.titles li a:active::after{
+    transform: scale(1);
+}
+
+.homepage .container-fluid.thirdrow .row ul.promotion {
+    transition: .5s;
+}
+
+.homepage .container-fluid.thirdrow .row ul.news {
+    display: none;
+    transition: .5s;
+}
+
+/* End of Homepage */
+
+/* Movie Page*/
+
+.movie .firstrow h1 {
+    margin-top: 200px;
+    color: white;
+    padding: 0 0 50px 100px;
+}
+
+.movie .firstrow ul.list {
+    display: inline;
+    text-align: center;
+    margin: auto;
+}
+
+.movie .firstrow ul.list li{
+    list-style: none;
+    margin: auto;
+    padding: 15px 0;
+    position: relative;
+    width: 20%;
+    float: left;
+}
+
+.movie .firstrow ul.list li a img{
+    width: 240px;
+    height: 320px;
+    
+}
+
+.movie .firstrow ul.list li h3 {
+    color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.movie .firstrow ul.list li .buyBtn{
+    display: none;
+    position: absolute;
+    width: 64%;
+    left: 18%;
+    top: 50%;
+    z-index: 1;
+}
+
+.movie .firstrow ul.list li .infoBtn {
+    display: none;
+    position: absolute;
+    width: 64%;
+    left: 18%;
+    top: 60%;
+    z-index: 1;
+}
+
+.movie .firstrow ul.list li .listbox:hover a .black-overlay {
+    position: absolute;
+    top: 15px;
+    left: 18%;
+    width: 64%;
+    height: 82%;
+    background-color: rgba(0,0,0,.5);
+    display: block;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: context-menu;
+}
+
+.movie .firstrow ul.list li .listbox:hover .buyBtn {
+    display: block;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid green;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.movie .firstrow ul.list li .listbox:hover .infoBtn {
+    display: block;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.movie .firstrow ul.list li .listbox:hover .buyBtn:hover {
+    background-color: green;
+    border: 2px solid white;
+    
+}
+
+.movie .firstrow ul.list li .listbox:hover .infoBtn:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+
+.movie .firstrow ul.list li .listbox {
+    width: 65%;
+    margin: auto;
+}
+
+.movie .firstrow .searchbar {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.movie .firstrow .searchbar input[type="text"] {
+    margin-top: 200px;
+    width: 25%;
+    height: 40px;
+    background-color: rgba(0,0,0,0);
+    border: 3px solid white;
+    border-radius: 15px;
+    color: white;
+    padding: 0 15px;
+}
+
+.movie .firstrow .searchbar input[type="text"]::placeholder {
+    color: white;
+}
+
+.movie .firstrow .searchbar button[type="submit"]{
+    height: 35px;
+    width: 40px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    margin-left: -45px;
+    color: white;
+}
+
+/* Modal Content */
+.popout-content {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    height: 45%;
+    top: 230px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: left;
+    animation: animatetop 0.7s forwards;
+}
+
+/* Add Animation */
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:250; opacity:1}
+}
+
+
+/* The Close Button */
+#close {
+  color: white;
+  right: 5%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal.popout {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.popout-header {
+  padding: 2px 16px;
+  background-color: black;
+  color: white;
+}
+
+.popout-body {
+    padding: 2px 16px;
+    color: white;
+}
+
+/* End of Movie page */
+
+/* Membership Page */
+.membership .member-box {
+    width: 780px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: black;
+    padding: 5px;
+}
+
+.membership .member-box .left {
+    width: 30%;
+    height: 100%;
+    color: white;
+    float: left;
+    position: relative;
+    padding: 10px;
+}
+
+.membership .member-box .right {
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding: 10px;
+    border-left: 1px dotted white;
+}
+
+.membership .member-box .left h1 {
+    color: white;
+    padding: 0 10px;
+}
+
+.membership .member-box .right h1 {
+    color: white;
+    text-align: center;
+}
+
+.membership .member-box .right table th,.membership .member-box .right table td {
+    border: 2px solid white;
+}
+
+.membership .member-box .right table {
+    border-collapse: collapse;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.membership .member-box .right table thead tr th{
+    text-align: center;
+}
+
+.membership .member-box .right table tr:not(:first-child) th{
+    padding-left: 5px;
+}
+
+.membership .member-box .right table tbody {
+    width: 100%;
+    height: 365px;
+    display: block;
+    overflow: auto;
+}
+.membership .member-box .right table thead > tr {
+    display: block;
+}
+
+.membership .member-box .right table thead th, .membership .member-box .right table tbody td {
+    padding: 5px;
+    text-align: left;
+    width: 260px;
+}
+
+.membership .member-box .right table tbody::-webkit-scrollbar{
+    display: none;
+}
+
+.membership .member-box .right table thead th:first-child {
+    width: 50px;
+}
+.membership .member-box .right table tbody td:first-child {
+    width: 50px;
+}
+
+.membership .member-box .right table thead th:nth-child(3), .membership .member-box .right table tbody td:nth-child(3), .membership .member-box .right table thead th:nth-child(4), .membership .member-box .right table tbody td:nth-child(4)  {
+    width: 100px;
+}
+
+
+.membership .member-box .left a.logoutBtn {
+    border: 1px solid white;
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    bottom: 0px;
+    margin: 10px 5px 10px 0px;
+}
+
+.membership .member-box .left a.logoutBtn:hover {
+    background-color: white;
+    color: black;
+    transition: .3s;
+}
+
+/* End of membership page */
+
+/* Buy page*/
+.buy .firstrow .buyTicket {
+    margin: 200px auto 0 auto;
+    height: 620px;
+    width: 500px;
+}
+
+.buy .firstrow .buyTicket .ticketForm h1 {
+    color: white;
+}
+
+.buy .firstrow .ticketForm {
+    color: white;
+    width: 500px;
+    background: black;
+    font-size: 24px;
+    padding: 50px;
+}
+
+.buy .firstrow .ticketForm select {
+    width: 100%;
+    background: rgb(0,0,0,0);
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 10px 0 20px 0;
+}
+
+.buy .firstrow .ticketForm option {
+    background-color: black;
+    border: 2px solid white;
+}
+
+.buy .firstrow .ticketForm .buyBtn {
+    background: rgba(0,0,0,0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+    transition: .5s;
+}
+
+.buy .firstrow .ticketForm .buyBtn:hover {
+    background: white;
+    color: black;
+}
+/* End of Buy page*/
+
+/* Checkout page */
+.checkout .firstrow .invoice {
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    margin: 150px auto;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.checkout .firstrow .invoice .sendEmail {
+    width: 100%;
+    border-radius: 15px;
+    color: white;
+    background: rgba(0,0,0,0);
+    border: 2px solid white;
+        margin: 10px 0;
+}
+
+.checkout .firstrow .invoice .sendEmail:hover {
+ 
+    color: black;
+    background: white;
+    transition: .5s;
+}
+
+
+.checkout .firstrow .invoice select {
+    color: white;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px 0;
+}
+
+.checkout .firstrow .invoice select option{
+    background-color: black;
+    
+}
+/* End of checkout page*/
+
+/* Rating Page*/
+.rating .firstrow .ratingForm {
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    margin: 150px auto;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.rating .firstrow .ratingForm select {
+    width: 50%;
+    border: 2px solid white;
+    background: rgba(0,0,0,0);
+    color: white;
+    border-radius: 5px;
+}
+
+.rating .firstrow .ratingForm option {
+    background-color: black;
+    color: white;
+    
+}
+
+.rating .firstrow .ratingForm textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+    background: rgba(0,0,0,0);
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.rating .firstrow .ratingForm textarea::placeholder{
+    color: white;
+}
+
+.rating .firstrow .ratingForm .submitRating {
+    background: rgba(0,0,0,0);
+    border: 2px solid white;
+    color: white;
+    border-radius: 15px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.rating .firstrow .ratingForm .submitRating:hover {
+    background-color: white;
+    color: black;
+    transition: .5s;
+    
+}
+/* End of rating page*/
+
+/* ChatBot*/
+.chatbot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+}
+
+.chatbot ::selection{
+    color: #fff;
+    background: #007bff;
+}
+
+.chatbot .form::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 25px;
+}
+.chatbot .form::-webkit-scrollbar-track{
+    background: white;
+}
+.chatbot .form::-webkit-scrollbar-thumb{
+    background: grey;
+}
+.chatbot .form::-webkit-scrollbar-thumb:hover{
+    background: #ccc;
+}
+
+.chatbot .open-button {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    background: rgba(0,0,0,0);
+}
+
+.chatbot .open-button > i {
+    color: white;
+    font-size: 30px;
+}
+
+.chatbot .wrapper.open {
+    animation: open 0.5s forwards;
+}
+
+.chatbot .wrapper.close {
+    animation: close 0.5s forwards;
+}
+
+@keyframes open {
+  from {bottom:-300px; opacity:0}
+  to {bottom:0; opacity:1}
+}
+
+@keyframes close {
+  from {bottom:0; opacity:1}
+  to {bottom:-300; opacity:0}
+}
+
+.chatbot .wrapper{
+    width: 370px;
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+    border-top: 0px;
+    display: none;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.chatbot .wrapper .title{
+    background: black;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.chatbot .wrapper .title .close-button {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+}
+
+.chatbot .wrapper .form{
+    padding: 20px 15px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: black;
+}
+.chatbot .wrapper .form .inbox{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+.chatbot .wrapper .form .user-inbox{
+    justify-content: flex-end;
+    margin: 13px 0;
+}
+.chatbot .wrapper .form .inbox .icon{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    border: 2px solid white;
+    background: black;
+    padding: 10px;
+}
+.chatbot .wrapper .form .inbox .msg-header{
+    max-width: 53%;
+    margin-left: 10px;
+}
+.chatbot .form .inbox .msg-header p{
+    color: #fff;
+    background: black;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 2px solid;
+}
+.chatbot .form .user-inbox .msg-header p{
+    color: #333;
+    background: black;
+    color: white;
+}
+.chatbot .wrapper .typing-field{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: black;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 0 0 5px 5px;
+}
+.chatbot .wrapper .typing-field .input-data{
+    height: 40px;
+    width: 335px;
+    position: relative;
+}
+.chatbot .wrapper .typing-field .input-data input{
+    color: white;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 80px 0 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    background: black;
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease;
+}
+.chatbot .typing-field .input-data input:focus{
+    border-color: none;
+}
+.chatbot .input-data input::placeholder{
+    color: #999999;
+    transition: all 0.3s ease;
+}
+.chatbot .input-data input:focus::placeholder{
+    color: #bfbfbf;
+}
+.chatbot .wrapper .typing-field .input-data button{
+    position: absolute;
+    right: 5px;
+    top: 37%;
+    height: 35px;
+    width: 65px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 5px;
+    background: black;
+    border: 2px solid white;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+.chatbot .wrapper .typing-field .input-data input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
+.chatbot .typing-field .input-data button:hover{
+    background: white;
+    color: black;
+    
+}
+/* End of chatbot*/
+
+/* Promotion */
+
+.promotion .firstrow .poster {
+    display: inline-flex;
+    margin-bottom: 3%;
+}
+
+.promotion .firstrow .poster .col-4 {
+    text-align: center;
+}
+
+.promotion .firstrow .poster .col-4 img {
+    width: 350px;
+}
+
+.promotion .row > h1 {
+    margin: 13% auto 2% auto;
+    color: white;
+    text-align: center;
+    border-bottom: 2px dashed;
+    width: 350px;
+
+}
+/* End of promotion */
+
+/* News */
+.news .firstrow .poster {
+    display: inline-flex;
+    margin-bottom: 3%;
+}
+
+.news .firstrow .poster .col-4 {
+    text-align: center;
+}
+
+.news .firstrow .poster .col-4 img {
+    width: 450px;
+}
+
+.news .row > h1 {
+    margin: 13% auto 2% auto;
+    color: white;
+    text-align: center;
+    border-bottom: 2px dashed;
+    width: 250px;
+
+}
+/* End of news */
+
+/* Admin Page*/
+.admin a{
+    color: white;
+}
+
+.admin .checkSales, .admin .addMovie, .admin .addPromotion, .admin .addNews {
+    display: none;
+}
+
+.admin h1 {
+    background: black;
+    color: white;
+    margin: 10px;
+    padding: 0;
+    width: 1885px;
+}
+
+.admin h1 a{
+    float: right;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.admin h1 a:hover{
+    text-decoration: underline;
+}
+
+.admin .col-md-2, .admin .col-md-10 {
+    height: 879px;
+}
+
+.admin .col-md-2 {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border: 2px solid white;
+}
+
+.admin .col-md-10 {
+    background-color: black;
+}
+
+.admin .col-md-2 ul {
+    list-style: none;
+    padding: 0;  
+    margin: 0;
+    font-size: 22px;
+}
+
+.admin .col-md-2 ul li {
+    height: 50px;
+    color: white;
+    padding: 10px 50px;
+    border: 2px solid white;
+}
+
+.admin .col-md-2 ul li:hover {
+    background-color: white;
+}
+
+.admin .col-md-2 ul li:hover a{
+    color: black;
+}
+
+
+.admin .col-md-2 ul li a {
+    text-decoration: none;
+}
+
+.admin .col-md-2 ul li a:hover {
+    color: black;
+}
+
+
+.admin .col-md-2 ul li:hover {
+    background-color: white !important;
+    color: black;
+    transition: .5s;
+}
+
+.admin .col-md-2 ul li:hover a{
+    color: black !important;
+}
+
+.admin .col-md-2 ul li a:focus{
+    color: black;
+}
+
+.admin .col-md-10 .addMovie .addMovieForm, .admin .col-md-10 .addPromotion .addPromotionForm, .admin .col-md-10 .addNews .addnewsForm  {
+    margin: 80px auto;
+    width: 400px;
+    color: white;
+}
+
+.admin .col-md-10 .addMovie .addMovieForm h3{
+    color: white;
+}
+
+.admin .col-md-10 .addMovie .addMovieForm input[type="text"], .admin .col-md-10 .addMovie .addMovieForm textarea {
+    border: none;
+    border-bottom: 2px solid white;
+    background: rgba(0,0,0,0);
+    color: white;
+    width: 400px;
+    margin-bottom: 5px;
+}
+
+.admin .col-md-10 .addMovie .addMovieForm input[type="text"]::placeholder, .admin .col-md-10 .addMovie .addMovieForm ::placeholder {
+    color: white;
+    
+}
+.admin .col-md-10 .addMovie .addMovieForm input:focus, .admin .col-md-10 .addMovie .addMovieForm textarea:focus{
+    outline:none; 
+}
+
+.admin .col-md-10 .addMovie .addMovieForm .addMovieBtn, .admin .col-md-10 .addPromotion .addPromotionForm .addPromotionBtn, .admin .col-md-10 .addNews .addNewsForm .addNewsBtn{
+    color: white;
+    background: rgba(0,0,0,0);
+    border-radius: 15px;
+    border: 2px solid white;
+    width: 100%;
+}
+
+.admin .col-md-10 .addMovie .addMovieForm input[type="file"]{
+    color: white;
+}
+
+.admin .col-md-10 .addPromotion .addPromotionForm input[type="text"], .admin .col-md-10 .addNews .addNewsForm input[type="text"] {
+    border: none;
+    border-bottom: 2px solid white;
+    background: rgba(0,0,0,0);
+    color: white;
+    width: 400px;
+    margin-bottom: 5px;
+    
+}
+
+.admin .col-md-10 .addPromotion .addPromotionForm input[type="text"]::placeholder, .admin .col-md-10 .addNews .addNewsForm input[type="text"]::placeholder{
+    color: white;
+}
+
+.admin .col-md-10 .checkSales .sales {
+    color: white;
+    margin: 30px auto;
+    font-size: 22px;
+    border-collapse: collapse;
+}
+
+.admin .col-md-10 .checkSales .sales thead {
+    text-align: center;
+}
+
+.admin .col-md-10 .checkSales .sales thead tr th, .admin .col-md-10 .checkSales .sales tbody tr td {
+    padding: 10px 20px;
+}
+
+.admin .col-md-10 .checkSales .sales thead, .admin .col-md-10 .checkSales .sales thead tr, .admin .col-md-10 .checkSales .sales thead th, .admin .col-md-10 .checkSales .sales tbody, .admin .col-md-10 .checkSales .sales tbody tr, .admin .col-md-10 .checkSales .sales tbody td{
+    border: 2px solid white;
+}
+
+.admin .col-md-10 .checkSales {
+    height: 800px;
+    overflow: auto;
+}
+
+.admin .col-md-10 .checkSales .printBtn { 
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border: 2px solid white;
+    color: white;
+    background: rgba(0,0,0,0);
+    width: 100px;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.admin .col-md-10 .checkSales .filterForm {
+    margin: 20px 0 0 60px;
+    color: white;
+    font-size: 20px;
+}
+
+.admin .col-md-10 .checkSales .filterForm #monthPicker {
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0,0,0,0);
+}
+
+.admin .col-md-10 .checkSales .filterForm .filterBtn {
+    border-radius: 5px;
+    background: rgba(0,0,0,0);
+    border: 2px solid white;
+    color: white;
+}
+
+.admin .col-md-10 .checkSales .filterForm .month::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+}
+
+.admin .col-md-10 .checkSales .salesChart h2 {
+    color: white;
+    margin: 50px;
+}
+
+/* End of admin page */
